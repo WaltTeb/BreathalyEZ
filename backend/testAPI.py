@@ -1,10 +1,6 @@
-import os
+
 from flask import Flask,jsonify,request
 from flask_cors import CORS
-from dotenv import load_dotenv, find_dotenv
-
-load_dotenv(find_dotenv())
-IP_ADDRESS = os.environ.get("RPI_IP_ADDRESS")
 
 app = Flask(__name__)
 CORS(app)
@@ -18,4 +14,4 @@ def hello():
     return jsonify(data)
 
 if __name__ == '__main__':
-    app.run(host=f'{IP_ADDRESS}')
+    app.run(host='0.0.0.0')
