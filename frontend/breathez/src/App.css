@@ -1,11 +1,11 @@
 #basicPage{
   display: inline;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  text-align: center;
+  
 }
 
-#countTracker{
+
+#titleCard{
+  font-size: 50px;
   text-align: center;
 }
-
