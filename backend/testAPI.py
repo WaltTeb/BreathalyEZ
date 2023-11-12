@@ -12,7 +12,10 @@ def hello():
         ser = serial.Serial('/dev/ttyACM0')
         for i in range(100):
             x = ser.readline()
-            collectSample.append(x)
+            x = x.decode('UTF-8')
+            y = x.split('\r')
+            if len(y) == 4:
+                collectSample.append(float(x))
         average = sum(collectSample)/100
 
         data = {
