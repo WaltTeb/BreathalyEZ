@@ -3,7 +3,12 @@
   text-align: center;
   
 }
+#collectSampleButton{
+  height: 10vh;
+  width: 25vw;
 
+  font-size: 20px;
+}
 
 #titleCard{
   font-size: 50px;
