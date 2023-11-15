@@ -1,16 +1,20 @@
 #basicPage{
   display: inline;
   text-align: center;
-  
 }
 #collectSampleButton{
   height: 10vh;
   width: 25vw;
-
   font-size: 20px;
+  font-weight: 600;
 }
 
 #titleCard{
   font-size: 50px;
   text-align: center;
+}
+
+.textField{
+  font-size: 20px;
+  font-weight: 700;
 }

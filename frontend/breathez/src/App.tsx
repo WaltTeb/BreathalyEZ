@@ -51,7 +51,7 @@ function App() {
           <h1>BreathalyEZ</h1>
         </div>
         <div id="lowerPage">
-          <div id="textArea">
+          <div className="textField" id="textArea">
 
             {collecting ?
               <p>Collecting Sample...</p> :
@@ -72,7 +72,7 @@ function App() {
           >
             Collect Sample</Button>
         </div>
-        <div>
+        <div className="textField" id="resMessage">
           <ResponseMessage BAC={BAC} />
         </div>
       </div>
